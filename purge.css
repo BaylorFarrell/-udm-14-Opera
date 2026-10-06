@@ -1,0 +1,24 @@
+#Odp5De,
+[jscontroller="EYwa3d"],
+[jscontroller="jNZDL"],
+[data-tool],
+[role="menu"] > li:has([data-tool]),
+[role="menu"] > div:has(+ li [data-tool]),
+a[href*="//ai.google/"],
+div:has(> [jscontroller="aD8OEe"] a[href*="p=data_genai_search"]),
+[role="listitem"]:has(> a[href*="udm=50&"]),
+[role="listitem"]:has(> a[href$="udm=50"]),
+a[href*="udm=50&"]:not([role="navigation"] a),
+a[href$="udm=50"]:not([role="navigation"] a) {
+  display: none !important;
+}
+
+[role="navigation"] a[href*="udm=50&"],
+[role="navigation"] a[href$="udm=50"] {
+  visibility: hidden !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  margin-inline: 0 !important;
+  padding-inline: 0 !important;
+  overflow: hidden !important;
+}
